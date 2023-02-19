@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application module &mdash; LASY OCHRONNE 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ApplicationTest module" href="ApplicationTest.html" />
+    <link rel="prev" title="LASY_OCHRONNE" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> LASY OCHRONNE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">LASY_OCHRONNE</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Application module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ApplicationTest.html">ApplicationTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Application_UI.html">Application_UI module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GIS_dialog.html">GIS_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="category_kind.html">category_kind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_image.html">create_image module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="field_kind.html">field_kind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map_tool.html">map_tool module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_dialog.html">open_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prepare_data.html">prepare_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raport.html">raport module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_xlsx.html">save_xlsx module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabele_attribute.html">tabele_attribute module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabele_attriute_to_excel.html">tabele_attriute_to_excel module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="worker.html">worker module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LASY OCHRONNE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">LASY_OCHRONNE</a> &raquo;</li>
+      <li>Application module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Application.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Application">
+<span id="application-module"></span><h1>Application module<a class="headerlink" href="#module-Application" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Application.Window">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Application.</span></span><span class="sig-name descname"><span class="pre">Window</span></span><a class="headerlink" href="#Application.Window" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code>, <a class="reference internal" href="Application_UI.html#Application_UI.Ui_MainWindow" title="Application_UI.Ui_MainWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">Ui_MainWindow</span></code></a></p>
+<p>The main application class that inherits from classes: MainWindow (QMainWindow)and Ui_MainWindow (imported class of application UI).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.add_deafult_style_of_layer">
+<span class="sig-name descname"><span class="pre">add_deafult_style_of_layer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.add_deafult_style_of_layer" title="Permalink to this definition"></a></dt>
+<dd><p>Adds deafult style of selected layer (shapefile): creates symbol and refreshes canvas.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.create_categories_dictionary">
+<span class="sig-name descname"><span class="pre">create_categories_dictionary</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#Application.Window.create_categories_dictionary" title="Permalink to this definition"></a></dt>
+<dd><p>Creates dictionary in which the keys are protection categories (str) and the values are their codes (str) from class CategoryKindEnum.
+Returns:</p>
+<blockquote>
+<div><p>dict: created dictionary of protection categories and their codes</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.create_list_of_fields_aliases">
+<span class="sig-name descname"><span class="pre">create_list_of_fields_aliases</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#Application.Window.create_list_of_fields_aliases" title="Permalink to this definition"></a></dt>
+<dd><p>Create list of selected layer’s (shapefile) fields aliases from class FieldKindEnum.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>list: created list of selected layer’s fields aliases (list of strings).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.create_new_project">
+<span class="sig-name descname"><span class="pre">create_new_project</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.create_new_project" title="Permalink to this definition"></a></dt>
+<dd><p>Creates new project: reset data, set deafult states of widgets, deafult colors of buttons and color of map background.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.create_symbol">
+<span class="sig-name descname"><span class="pre">create_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color_fill</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_border</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">QgsFillSymbol</span></span></span><a class="headerlink" href="#Application.Window.create_symbol" title="Permalink to this definition"></a></dt>
+<dd><p>Create single symbol for selected layer (shapefile) and returns it.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>color_fill (str): fill color for features of selected layer in RGB format.
+color_border (str): border color for features of selected layer in RGB format.</p>
+</dd>
+<dt>Returns:</dt><dd><p>QgsFillSymbol: single symbol for selected layer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.finish_worker">
+<span class="sig-name descname"><span class="pre">finish_worker</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.finish_worker" title="Permalink to this definition"></a></dt>
+<dd><p>Does when worker is finish.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.generate_raport">
+<span class="sig-name descname"><span class="pre">generate_raport</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.generate_raport" title="Permalink to this definition"></a></dt>
+<dd><p>Generates raport and saves it as a excel file in selected path. In the event of a problem, an message appear.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.help">
+<span class="sig-name descname"><span class="pre">help</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.help" title="Permalink to this definition"></a></dt>
+<dd><p>Opens user manual in pdf file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.identify">
+<span class="sig-name descname"><span class="pre">identify</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.identify" title="Permalink to this definition"></a></dt>
+<dd><p>Turns on map tool for identifying features in selected layer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.load_data">
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.load_data" title="Permalink to this definition"></a></dt>
+<dd><p>Loads selected data to application - start the worker thread.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.load_list_category">
+<span class="sig-name descname"><span class="pre">load_list_category</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.load_list_category" title="Permalink to this definition"></a></dt>
+<dd><p>Adds list of protection categories from class CategoryKindEnum to combo box and set it on position -1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.open_tabele_attribute">
+<span class="sig-name descname"><span class="pre">open_tabele_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.open_tabele_attribute" title="Permalink to this definition"></a></dt>
+<dd><p>Opens a seceond window with tabele of selected layer attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.open_window">
+<span class="sig-name descname"><span class="pre">open_window</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.open_window" title="Permalink to this definition"></a></dt>
+<dd><p>Set deafult states of widgets and deafult when main window of aplication is openining.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.pan">
+<span class="sig-name descname"><span class="pre">pan</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Application.Window.pan" title="Permalink to this definition"></a></dt>
+<dd><p>Turns on Pan tool.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.print_image">
+<span class="sig-name descname"><span class="pre">print_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.print_image" title="Permalink to this definition"></a></dt>
+<dd><p>“Opens print dialog box.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.report_progress">
+<span class="sig-name descname"><span class="pre">report_progress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.report_progress" title="Permalink to this definition"></a></dt>
+<dd><p>Method to report the progress to gui.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>n (int): step.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.reset_data">
+<span class="sig-name descname"><span class="pre">reset_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.reset_data" title="Permalink to this definition"></a></dt>
+<dd><p>Reset data: remove layer, clear lists of protected and unprotected subarea, sets deafult states of widgets, refreshes canvas and stops emitting of current mouse position.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.save_image">
+<span class="sig-name descname"><span class="pre">save_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.save_image" title="Permalink to this definition"></a></dt>
+<dd><p>Saves image in selected path. In the event of a problem, an message appears.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.save_tabele_attribute_to_excel">
+<span class="sig-name descname"><span class="pre">save_tabele_attribute_to_excel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.save_tabele_attribute_to_excel" title="Permalink to this definition"></a></dt>
+<dd><p>saves the tabele of selected layer attributes as a excel file in selected path. In the event of a problem, an message appear.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.select_protected_subarea">
+<span class="sig-name descname"><span class="pre">select_protected_subarea</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.select_protected_subarea" title="Permalink to this definition"></a></dt>
+<dd><p>Selects forest subareas (features) of with a specific protection category and displays in the status bar: number of selected subareas, total number of all subareas and sum of selected area. 
+If no protection category has been selected, a message is displayed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_backgroud_map_color">
+<span class="sig-name descname"><span class="pre">set_backgroud_map_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_backgroud_map_color" title="Permalink to this definition"></a></dt>
+<dd><p>Sets color of canvas background and refreshes canvas.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_buttons_color">
+<span class="sig-name descname"><span class="pre">set_buttons_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_buttons_color" title="Permalink to this definition"></a></dt>
+<dd><p>Sets buttons colors</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>button_color (dict): a dictionary in which the keys are the buttons (and the values are their colors in RGB format (str).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_color_button">
+<span class="sig-name descname"><span class="pre">set_color_button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_color_button" title="Permalink to this definition"></a></dt>
+<dd><p>Sets color of selected button and refreshes canvas.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>button (QgsColorButton): selected button</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_deafult_buttons_colors">
+<span class="sig-name descname"><span class="pre">set_deafult_buttons_colors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_deafult_buttons_colors" title="Permalink to this definition"></a></dt>
+<dd><p>Sets deafult colors of buttons.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_deafult_states_of_widgets">
+<span class="sig-name descname"><span class="pre">set_deafult_states_of_widgets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_deafult_states_of_widgets" title="Permalink to this definition"></a></dt>
+<dd><p>Sets deafult states of widgets: enabled or not, their visability, text, current index.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_enabled_of_widget">
+<span class="sig-name descname"><span class="pre">set_enabled_of_widget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enabled_of_widets</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_enabled_of_widget" title="Permalink to this definition"></a></dt>
+<dd><p>Sets if widgets is enabled or not.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>enabled_of_widets (dict): dictionary in which the keys are widgets (QtWidgets) and the values are True or False (bool), depending on whether the widget  should be enabled or not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_field_alias">
+<span class="sig-name descname"><span class="pre">set_field_alias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_field_alias" title="Permalink to this definition"></a></dt>
+<dd><p>Sets aliases for fields of selected layer (shapefile) from class FieldKindEnum.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>layer (QgsVectorLayer): selected data with subareas of specified forest district.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_label_text">
+<span class="sig-name descname"><span class="pre">set_label_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_label_text" title="Permalink to this definition"></a></dt>
+<dd><p>Sets texts of labels.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>label_text (dict): dictionary in which the keys are labels (QLineEdit) and the values are their texts (str).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_symbol">
+<span class="sig-name descname"><span class="pre">set_symbol</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_symbol" title="Permalink to this definition"></a></dt>
+<dd><p>Sets single symbols for selected and unselected layer features and creates renderer categories.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.set_widget_visability">
+<span class="sig-name descname"><span class="pre">set_widget_visability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget_visability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.set_widget_visability" title="Permalink to this definition"></a></dt>
+<dd><p>Sets visabilit of widgets.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>widget_visability (dict): dictionary in which the keys are widgets (QtWidgets) and the values are True or False (bool), depending on their visability.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.show_XY">
+<span class="sig-name descname"><span class="pre">show_XY</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.show_XY" title="Permalink to this definition"></a></dt>
+<dd><p>Gets last position of mouse cursor, transforms from screen coordinates to layers coordinates and shows they in lebel on status bar (witdh of thie lebel matches the content).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.unselect_protected_subarea">
+<span class="sig-name descname"><span class="pre">unselect_protected_subarea</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.unselect_protected_subarea" title="Permalink to this definition"></a></dt>
+<dd><p>Unselects all features of selected layer and adds it deafult style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.zoom_extent">
+<span class="sig-name descname"><span class="pre">zoom_extent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.zoom_extent" title="Permalink to this definition"></a></dt>
+<dd><p>Zoom to selected layer extent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.zoom_in">
+<span class="sig-name descname"><span class="pre">zoom_in</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.zoom_in" title="Permalink to this definition"></a></dt>
+<dd><p>Turns on Zoom In tool.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Application.Window.zoom_out">
+<span class="sig-name descname"><span class="pre">zoom_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.Window.zoom_out" title="Permalink to this definition"></a></dt>
+<dd><p>Turns on Zoom Out tool.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Application.fromFunction">
+<span class="sig-prename descclassname"><span class="pre">Application.</span></span><span class="sig-name descname"><span class="pre">fromFunction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.fromFunction" title="Permalink to this definition"></a></dt>
+<dd><p>staticmethod(function) -&gt; method</p>
+<p>Convert a function to be a static method.</p>
+<p>A static method does not receive an implicit first argument.
+To declare a static method, use this idiom:</p>
+<blockquote>
+<div><dl>
+<dt>class C:</dt><dd><p>&#64;staticmethod
+def f(arg1, arg2, …):</p>
+<blockquote>
+<div><p>…</p>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>It can be called either on the class (e.g. C.f()) or on an instance
+(e.g. C().f()). Both the class and the instance are ignored, and
+neither is passed implicitly as the first argument to the method.</p>
+<p>Static methods in Python are similar to those found in Java or C++.
+For a more advanced concept, see the classmethod builtin.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Application.main">
+<span class="sig-prename descclassname"><span class="pre">Application.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Application.main" title="Permalink to this definition"></a></dt>
+<dd><p>Main application function</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="LASY_OCHRONNE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ApplicationTest.html" class="btn btn-neutral float-right" title="ApplicationTest module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Kalina Juszczyk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

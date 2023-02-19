@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>worker module &mdash; LASY OCHRONNE 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="tabele_attriute_to_excel module" href="tabele_attriute_to_excel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> LASY OCHRONNE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">LASY_OCHRONNE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Application.html">Application module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ApplicationTest.html">ApplicationTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Application_UI.html">Application_UI module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GIS_dialog.html">GIS_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="category_kind.html">category_kind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_image.html">create_image module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="field_kind.html">field_kind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map_tool.html">map_tool module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_dialog.html">open_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prepare_data.html">prepare_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raport.html">raport module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_xlsx.html">save_xlsx module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabele_attribute.html">tabele_attribute module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabele_attriute_to_excel.html">tabele_attriute_to_excel module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">worker module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LASY OCHRONNE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">LASY_OCHRONNE</a> &raquo;</li>
+      <li>worker module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/worker.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-worker">
+<span id="worker-module"></span><h1>worker module<a class="headerlink" href="#module-worker" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="worker.Worker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">worker.</span></span><span class="sig-name descname"><span class="pre">Worker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selected_layer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories_and_num_dictionery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#worker.Worker" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QObject</span></code></p>
+<p>Worker for joining protection categories of forest subares from  f_arod_category.txt file to tabele attributes of selected vector layer.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="worker.Worker.finished">
+<span class="sig-name descname"><span class="pre">finished</span></span><a class="headerlink" href="#worker.Worker.finished" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="worker.Worker.progress">
+<span class="sig-name descname"><span class="pre">progress</span></span><a class="headerlink" href="#worker.Worker.progress" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="worker.Worker.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#worker.Worker.run" title="Permalink to this definition"></a></dt>
+<dd><p>Runs worker.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="worker.fromFunction">
+<span class="sig-prename descclassname"><span class="pre">worker.</span></span><span class="sig-name descname"><span class="pre">fromFunction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#worker.fromFunction" title="Permalink to this definition"></a></dt>
+<dd><p>staticmethod(function) -&gt; method</p>
+<p>Convert a function to be a static method.</p>
+<p>A static method does not receive an implicit first argument.
+To declare a static method, use this idiom:</p>
+<blockquote>
+<div><dl>
+<dt>class C:</dt><dd><p>&#64;staticmethod
+def f(arg1, arg2, …):</p>
+<blockquote>
+<div><p>…</p>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>It can be called either on the class (e.g. C.f()) or on an instance
+(e.g. C().f()). Both the class and the instance are ignored, and
+neither is passed implicitly as the first argument to the method.</p>
+<p>Static methods in Python are similar to those found in Java or C++.
+For a more advanced concept, see the classmethod builtin.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tabele_attriute_to_excel.html" class="btn btn-neutral float-left" title="tabele_attriute_to_excel module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Kalina Juszczyk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

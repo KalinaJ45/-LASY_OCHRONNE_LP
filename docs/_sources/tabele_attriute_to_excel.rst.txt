@@ -1,0 +1,7 @@
+tabele\_attriute\_to\_excel module
+==================================
+
+.. automodule:: tabele_attriute_to_excel
+   :members:
+   :undoc-members:
+   :show-inheritance:

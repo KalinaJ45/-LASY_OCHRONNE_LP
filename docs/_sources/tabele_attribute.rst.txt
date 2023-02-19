@@ -1,0 +1,7 @@
+tabele\_attribute module
+========================
+
+.. automodule:: tabele_attribute
+   :members:
+   :undoc-members:
+   :show-inheritance:

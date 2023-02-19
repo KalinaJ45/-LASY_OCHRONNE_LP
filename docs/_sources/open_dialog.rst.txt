@@ -1,0 +1,7 @@
+open\_dialog module
+===================
+
+.. automodule:: open_dialog
+   :members:
+   :undoc-members:
+   :show-inheritance:

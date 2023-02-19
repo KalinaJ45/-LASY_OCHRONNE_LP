@@ -1,0 +1,7 @@
+category\_kind module
+=====================
+
+.. automodule:: category_kind
+   :members:
+   :undoc-members:
+   :show-inheritance:

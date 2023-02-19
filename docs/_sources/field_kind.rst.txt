@@ -1,0 +1,7 @@
+field\_kind module
+==================
+
+.. automodule:: field_kind
+   :members:
+   :undoc-members:
+   :show-inheritance:

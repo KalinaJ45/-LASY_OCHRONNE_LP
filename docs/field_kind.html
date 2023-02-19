@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>field_kind module &mdash; LASY OCHRONNE 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="map_tool module" href="map_tool.html" />
+    <link rel="prev" title="create_image module" href="create_image.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> LASY OCHRONNE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">LASY_OCHRONNE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Application.html">Application module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ApplicationTest.html">ApplicationTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Application_UI.html">Application_UI module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GIS_dialog.html">GIS_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="category_kind.html">category_kind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_image.html">create_image module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">field_kind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map_tool.html">map_tool module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_dialog.html">open_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prepare_data.html">prepare_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raport.html">raport module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_xlsx.html">save_xlsx module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabele_attribute.html">tabele_attribute module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabele_attriute_to_excel.html">tabele_attriute_to_excel module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="worker.html">worker module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LASY OCHRONNE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">LASY_OCHRONNE</a> &raquo;</li>
+      <li>field_kind module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/field_kind.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-field_kind">
+<span id="field-kind-module"></span><h1>field_kind module<a class="headerlink" href="#module-field_kind" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="field_kind.FieldKind">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">field_kind.</span></span><span class="sig-name descname"><span class="pre">FieldKind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias_field</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#field_kind.FieldKind" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Examines the class FieldKindEnum to find fields.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKind.alias_field">
+<span class="sig-name descname"><span class="pre">alias_field</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#field_kind.FieldKind.alias_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKind.field_name">
+<span class="sig-name descname"><span class="pre">field_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#field_kind.FieldKind.field_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKind.index">
+<span class="sig-name descname"><span class="pre">index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#field_kind.FieldKind.index" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">field_kind.</span></span><span class="sig-name descname"><span class="pre">FieldKindEnum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#field_kind.FieldKindEnum" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum Class consist of selected layer fields and its created aliases as members.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.ADRES_LESNY">
+<span class="sig-name descname"><span class="pre">ADRES_LESNY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=1,</span> <span class="pre">field_name='adr_for',</span> <span class="pre">alias_field='ADRES</span> <span class="pre">LEŚNY')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.ADRES_LESNY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.BUDOWA_PIONOWA_DRZEWOSTANU">
+<span class="sig-name descname"><span class="pre">BUDOWA_PIONOWA_DRZEWOSTANU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=6,</span> <span class="pre">field_name='stand_stru',</span> <span class="pre">alias_field='BUDOWA</span> <span class="pre">PIONOWA</span> <span class="pre">DRZEWOSTANU')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.BUDOWA_PIONOWA_DRZEWOSTANU" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.FUNKCJA_LASU">
+<span class="sig-name descname"><span class="pre">FUNKCJA_LASU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=5,</span> <span class="pre">field_name='forest_fun',</span> <span class="pre">alias_field='FUNKCJA</span> <span class="pre">LASU')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.FUNKCJA_LASU" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.GOSPODARSTWO">
+<span class="sig-name descname"><span class="pre">GOSPODARSTWO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=4,</span> <span class="pre">field_name='silvicult',</span> <span class="pre">alias_field='GOSPODARSTWO')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.GOSPODARSTWO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.KATEGORIE_OCHRONNOSCI">
+<span class="sig-name descname"><span class="pre">KATEGORIE_OCHRONNOSCI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=9,</span> <span class="pre">field_name='prot_categ',</span> <span class="pre">alias_field='KATEGORIE</span> <span class="pre">OCHRONNOŚCI')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.KATEGORIE_OCHRONNOSCI" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.KOD_GATUNKU_PANUJACEGO">
+<span class="sig-name descname"><span class="pre">KOD_GATUNKU_PANUJACEGO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=10,</span> <span class="pre">field_name='species_cd',</span> <span class="pre">alias_field='KOD</span> <span class="pre">GATUNKU</span> <span class="pre">PANUJĄCEGO')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.KOD_GATUNKU_PANUJACEGO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.NUMER_POWIERZCHNI">
+<span class="sig-name descname"><span class="pre">NUMER_POWIERZCHNI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=0,</span> <span class="pre">field_name='a_i_num',</span> <span class="pre">alias_field='NUMER</span> <span class="pre">POWIERZCHNI')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.NUMER_POWIERZCHNI" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.POWIERZCHNIA_HA">
+<span class="sig-name descname"><span class="pre">POWIERZCHNIA_HA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=8,</span> <span class="pre">field_name='sub_area',</span> <span class="pre">alias_field='POWIERZCHNIA</span> <span class="pre">(ha)')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.POWIERZCHNIA_HA" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.RODZAJ_POWIERZCHNI">
+<span class="sig-name descname"><span class="pre">RODZAJ_POWIERZCHNI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=2,</span> <span class="pre">field_name='area_type',</span> <span class="pre">alias_field='RODZAJ</span> <span class="pre">POWIERZCHNI')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.RODZAJ_POWIERZCHNI" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.ROK_STANU_DANYCH">
+<span class="sig-name descname"><span class="pre">ROK_STANU_DANYCH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=13,</span> <span class="pre">field_name='a_year',</span> <span class="pre">alias_field='ROK</span> <span class="pre">STANU</span> <span class="pre">DANYCH')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.ROK_STANU_DANYCH" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.TYP_SIEDLISKOWY_LASU">
+<span class="sig-name descname"><span class="pre">TYP_SIEDLISKOWY_LASU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=3,</span> <span class="pre">field_name='site_type',</span> <span class="pre">alias_field='TYP</span> <span class="pre">SIEDLISKOWY</span> <span class="pre">LASU')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.TYP_SIEDLISKOWY_LASU" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.UDZIA_GATUNKU_PANUJACEGO">
+<span class="sig-name descname"><span class="pre">UDZIAŁ_GATUNKU_PANUJACEGO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=11,</span> <span class="pre">field_name='part_cd',</span> <span class="pre">alias_field='UDZIAŁ</span> <span class="pre">GATUNKU</span> <span class="pre">PANUJĄCEGO')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.UDZIA_GATUNKU_PANUJACEGO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.WIEK_GATUNKU_PANUJACEGO">
+<span class="sig-name descname"><span class="pre">WIEK_GATUNKU_PANUJACEGO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=12,</span> <span class="pre">field_name='spec_age',</span> <span class="pre">alias_field='WIEK</span> <span class="pre">GATUNKU</span> <span class="pre">PANUJĄCEGO')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.WIEK_GATUNKU_PANUJACEGO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="field_kind.FieldKindEnum.WIEK_REBNOSCI">
+<span class="sig-name descname"><span class="pre">WIEK_REBNOSCI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FieldKind(index=7,</span> <span class="pre">field_name='rotat_age',</span> <span class="pre">alias_field='WIEK</span> <span class="pre">RĘBNOŚCI')</span></em><a class="headerlink" href="#field_kind.FieldKindEnum.WIEK_REBNOSCI" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="create_image.html" class="btn btn-neutral float-left" title="create_image module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="map_tool.html" class="btn btn-neutral float-right" title="map_tool module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Kalina Juszczyk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

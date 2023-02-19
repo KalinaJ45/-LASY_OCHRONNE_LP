@@ -1,0 +1,7 @@
+save\_xlsx module
+=================
+
+.. automodule:: save_xlsx
+   :members:
+   :undoc-members:
+   :show-inheritance:

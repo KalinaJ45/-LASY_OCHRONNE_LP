@@ -1,0 +1,7 @@
+ApplicationTest module
+======================
+
+.. automodule:: ApplicationTest
+   :members:
+   :undoc-members:
+   :show-inheritance:

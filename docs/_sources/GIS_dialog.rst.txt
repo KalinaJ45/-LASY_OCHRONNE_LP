@@ -1,0 +1,7 @@
+GIS\_dialog module
+==================
+
+.. automodule:: GIS_dialog
+   :members:
+   :undoc-members:
+   :show-inheritance:
