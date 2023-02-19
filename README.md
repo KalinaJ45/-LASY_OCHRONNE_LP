@@ -2,8 +2,8 @@ Aplikacja pozwalająca na wygenerowanie mapy lasów ochronnych w obrębie danego
 
 URUCHOMIENIE:
 
-Zainstaluj oprogramowanie QGIS LTR oraz Visual Studio Code
-W pliku Visual Studio Code_pyqgis.bat - sprawdź/skoryguj ścieżkę dostępu do QGIS (OSGEO4W_ROOT)
-W pliku Application.py sprawdź/skoryguj ścieżkę dostępu do qgis-ltr (QGIS_PATH)
-Przy pomocy pliku Visual Studio Code_pyqgis.bat otwórz Visual Studio Code
-W Visual Studio Code uruchom plik Application.py
+1. Zainstaluj oprogramowanie QGIS LTR oraz Visual Studio Code
+2. W pliku Visual Studio Code_pyqgis.bat - sprawdź/skoryguj ścieżkę dostępu do QGIS (OSGEO4W_ROOT)
+3. W pliku Application.py sprawdź/skoryguj ścieżkę dostępu do qgis-ltr (QGIS_PATH)
+4. Przy pomocy pliku Visual Studio Code_pyqgis.bat otwórz Visual Studio Code
+5. W Visual Studio Code uruchom plik Application.py
